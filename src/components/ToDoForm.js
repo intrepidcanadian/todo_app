@@ -25,7 +25,7 @@ function ToDoForm({ addToDo }) {
     <div>
       <h1>To-Do Form</h1>
       <form className="ToDoForm" onSubmit={handleSubmit}>
-        <div >
+        <div className="ToDoLabels">
           <label htmlFor="title">Title</label>
             <input
               type="text"
@@ -34,7 +34,7 @@ function ToDoForm({ addToDo }) {
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
-          <div>
+          <div className="ToDoLabels">
           <label htmlFor="description">Description</label>
             <input
               type="text"
@@ -43,7 +43,7 @@ function ToDoForm({ addToDo }) {
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <div>
+          <div className="ToDoLabels">
             <label htmlFor="status">Status</label>
             <select
                 id = "status"
@@ -57,7 +57,7 @@ function ToDoForm({ addToDo }) {
                     <option value ="Completed">Completed </option>
                 </select>
           </div>
-          <div>
+          <div className="ToDoLabels">
             <label htmlFor="duedate">Due Date</label>
             <input
               type="date"
@@ -66,7 +66,7 @@ function ToDoForm({ addToDo }) {
               onChange={(e) => setDueDate(e.target.value)}
             />
           </div>
-          <div>
+          <div className="ToDoLabels">
           <label htmlFor="task">Task</label>
             <input
               type="text"
@@ -74,12 +74,12 @@ function ToDoForm({ addToDo }) {
               placeholder="What task do you want to add today?"
               onChange={(e) => setValue(e.target.value)}
             />
-            <div style = {{display: "flex", justifyContent: "center"}}>
+        </div>
+        <div style = {{display: "flex", justifyContent: "center"}}>
               <button type="submit" className="todo-btn">
                 Add Task
               </button>
             </div>
-        </div>
       </form>
     </div>
   );

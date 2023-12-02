@@ -38,7 +38,7 @@ function EditToDoForm({ EditToDo, task }) {
     <div>
       Editing The Task
       <form className="ToDoForm" onSubmit={handleSubmit}>
-        <div>
+        <div className ="ToDoLabels">
           <label htmlFor="title">Title</label>
           <input
             type="text"
@@ -48,7 +48,7 @@ function EditToDoForm({ EditToDo, task }) {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div>
+        <div className ="ToDoLabels">
           <label htmlFor="description">Description</label>
           <input
             type="text"
@@ -58,7 +58,7 @@ function EditToDoForm({ EditToDo, task }) {
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        <div>
+        <div className ="ToDoLabels">
           <label htmlFor="status">Status</label>
           <select
             id="status"
@@ -72,7 +72,7 @@ function EditToDoForm({ EditToDo, task }) {
             <option value="Completed">Completed </option>
           </select>
         </div>
-        <div>
+        <div className ="ToDoLabels">
           <label htmlFor="duedate">Due Date</label>
           <input
             type="date"
@@ -82,7 +82,7 @@ function EditToDoForm({ EditToDo, task }) {
             onChange={(e) => setDueDate(e.target.value)}
           />
         </div>
-        <div>
+        <div className ="ToDoLabels">
           <label htmlFor="task">Task</label>
           <input
             type="text"
@@ -91,12 +91,12 @@ function EditToDoForm({ EditToDo, task }) {
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
-          <div style={{ display: "flex", justifyContent: "center" }}>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
             <button type="submit" className="todo-btn">
               Edit Task
             </button>
           </div>
-        </div>
       </form>
     </div>
   );

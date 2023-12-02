@@ -32,6 +32,7 @@ label {
   color: white;
   display: flex;
   text-align: center;
+  padding: 1rem;
 }
 
 h3 {
@@ -60,6 +61,7 @@ h3 {
 .todo-select {
   margin: 0.5rem;
   padding: 0.5rem;
+  width: 32rem;
 }
 
 .todo-btn {
@@ -73,6 +75,15 @@ h3 {
 }
 
 .Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4d1cc8;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  
   &__list {
     text-align: center;
     margin: 0.5rem;
@@ -100,4 +111,10 @@ h3 {
     border-radius: 5px;
     margin-bottom: 1rem;
   }
+
+}
+
+.ToDoLabels {
+  display: flex;
+  justify-content: space-between;
 }
