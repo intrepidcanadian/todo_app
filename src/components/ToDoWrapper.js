@@ -27,9 +27,12 @@ function ToDoWrapper() {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
+            const newCompletedStatus = !todo.completed;
+
           return {
             ...todo,
             completed: !todo.completed,
+            status: newCompletedStatus ? "Completed" : "In Progress",
           };
         }
         return todo;

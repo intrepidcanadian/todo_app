@@ -68,8 +68,7 @@ function EditToDoForm({ EditToDo, task }) {
             onChange={handleStatusChange}
           >
             <option value="">Select a Status </option>
-            <option value="Pending">Pending </option>
-            <option value="In Progress">In-Progress </option>
+            <option value="Pending">In-Progress </option>
             <option value="Completed">Completed </option>
           </select>
         </div>

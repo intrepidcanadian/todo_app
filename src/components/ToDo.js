@@ -6,8 +6,10 @@ function ToDo({ task, toggleComplete, toggleDelete, toggleEdit }) {
     console.log(task);
 
   return (
-    <div className="Todo">
-      <div className ="Todo__list">
+    <div
+    onClick={() => toggleComplete(task.id)}
+    className={`Todo__${task.completed ? "completed" : "notcomplete"}`}>
+      <div className ="Todo__list" >
         <h3>Title:</h3>
         {task.title ? (<p>{task.title}</p>) : ("")}
       </div>
@@ -25,10 +27,7 @@ function ToDo({ task, toggleComplete, toggleDelete, toggleEdit }) {
       </div>
       <div className ="Todo__list">
         <h3>Task Details:</h3>
-        <p
-          onClick={() => toggleComplete(task.id)}
-          className={task.completed ? "completed" : "not complete"}
-        >
+        <p>
           {task.value}
           </p>
       </div>
