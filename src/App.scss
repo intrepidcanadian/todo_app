@@ -1,0 +1,100 @@
+
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    box-sizing:border-box;
+  }
+  
+  
+  h1 {
+    color: #fff;
+    margin: 0.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .TodoWrapper {
+    background: #fff;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  
+  .ToDoForm {
+    width: 50rem;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  label{
+    color: white;
+    display:flex;
+    text-align: center;
+
+  }
+  
+  h3 {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    color: white;
+  }
+  
+
+  .todo-input {
+    background: none;
+    border: 1px solid blue;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    width: 30rem;
+  }
+  
+  .todo-input::placeholder {
+    color: grey;
+  }
+
+  .todo-input::focus {
+    border: 1px solid white;
+  }
+
+  .todo-select {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .todo-btn {
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4d1cc8;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+    &__list {
+      text-align: center;
+      margin: 0.5rem;
+    }
+
+  }
+  
+  
+  .completed {
+    text-decoration: line-through;
+  }
